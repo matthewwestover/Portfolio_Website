@@ -4,7 +4,7 @@ import { Header } from 'semantic-ui-react';
 const fontSize = (size) => {
   switch(size) {
     case 'huge':
-      return '60px';
+      return '100px';
     case 'big':
       return '45px';
     case 'large':
@@ -26,7 +26,7 @@ const fadeIn = keyframes`
 `;
 
 export const HomeWrapper = styled.div`
-  background-color: ${props => props.value.darkTheme ? '#222831' : '#f8f5e4'}
+  background-color: ${props => props.value.darkTheme ? '#222831' : '#fffef6'}
   display: flex;
   flex-direction: column;
   position: relative;
@@ -45,36 +45,42 @@ export const HomeWrapper2 = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-right: 9.5%;
 `
 
 export const InfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  padding-right: 1em;
-  hr {
-    width: 100%;
-    height: 2px;
-    background-color: #ccc;
-    border: none;
-    margin: 5px 0;
-  }
+  align-items: flex-start;
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  border: none;
+  margin: 5px 0;
 `;
 
 export const Title = styled(Header)`
-  font-family: 'Montserrat !important';
+  font-family: 'Montserrat !important', sans-serif;
   font-size: ${props => fontSize(props.fSize)} !important;
   text-decoration: ${props => props.underlined ? 'underline' : ''} !important;
-  text-decoration: ${props => props.bold ? 'bold' : ''} !important;
-  text-decoration: ${props => props.italics ? 'italics' : ''} !important;
+  font-style: ${props => props.italic ? 'italic' : ''} !important;
   color: ${props => props.value.darkTheme ? '#eeeeee !important' : '#0e3047 !important'}
   
 `
 
 export const HomeLogo = styled.img`
-  height: 45vh;
+  height: 55vh;
   padding-right: 10%;
   border-right: 3px solid ${props => props.value.darkTheme ? '#eeeeee !important' : '#0e3047 !important'};
   margin-right: 10%;
+`
+
+export const HomePart = styled.div`
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
 `

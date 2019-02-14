@@ -5,7 +5,7 @@ export const ThemeConsumer = ThemeContext.Consumer;
 
 class ThemeProvider extends React.Component {
   state = {
-    darkTheme: false,
+    darkTheme: true,
     change: () => this.changeTheme()
   };
 
