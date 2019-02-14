@@ -1,15 +1,19 @@
 import React from 'react';
 import { ThemeConsumer } from "../providers/ThemeProvider";
-import { Container } from 'semantic-ui-react';
+import { HomeWrapper, HomeWrapper2, Title, InfoWrapper, HomeLogo } from '../styles/Custom';
+import Logo from '../assets/ColorLogoOutline.png';
 
 const Home = () => (
   <ThemeConsumer>
     {value => (
-      <Container value={value}>
-        <div>
-          <p style={{fontFamily: 'Montserrat', fontSize: '40px'}}>HAI</p>
-        </div>
-      </Container>
+      <HomeWrapper value={value}>
+        <HomeWrapper2>
+          <HomeLogo value={value} src={Logo} />
+        <InfoWrapper>
+          <Title value={value}>HAI</Title>
+        </InfoWrapper>
+        </HomeWrapper2>
+      </HomeWrapper>
     )}
   </ThemeConsumer>
 )

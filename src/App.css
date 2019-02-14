@@ -1,3 +1,10 @@
+
+/* Fonts */
+/* Headers */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* Body */
+@import url('https://fonts.googleapis.com/css?family=Ovo');
+
 /* Dark Colors
 #222831 - dark
 #393e46 - lighter dark
@@ -9,9 +16,3 @@
 #fd7014 - orange
 #0e3047 - darkblue
 #10828c - teal */
-
-/* Fonts */
-/* Headers */
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-/* Body */
-@import url('https://fonts.googleapis.com/css?family=Ovo');
