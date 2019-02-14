@@ -54,9 +54,6 @@ export const InfoWrapper = styled.div`
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  height: 2px;
-  background-color: #ccc;
-  border: none;
   margin: 5px 0;
 `;
 
@@ -83,4 +80,22 @@ export const HomePart = styled.div`
   width: 100%;
   z-index: -1;
   position: absolute;
+`
+
+export const PhantomFoot = styled.div`
+  display: block;
+  padding: 20px;
+  height: 60px;
+  width: 100%;
+`
+
+export const FooterDiv = styled.div`
+  background-color: ${props => props.value.darkTheme ? '#393e46' : '#10828c'}
+  height: 60px;
+  width: 100%;
+  border-top: 2px solid #fd7014;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 `
