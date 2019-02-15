@@ -4,6 +4,7 @@ import { Container } from 'semantic-ui-react';
 import ScrollToTop from './components/global/ScrollToTop';
 import Home from './components/Home';
 import NoMatch from './components/NoMatch';
+import Navbar from './components/global/Navbar'
 import Footer from './components/global/Footer';
 import './App.css';
 
@@ -11,6 +12,7 @@ class App extends React.Component {
   render() {
     return (
       <Fragment>
+        <Navbar />
         <Container fluid>
           <ScrollToTop>
             <Switch>

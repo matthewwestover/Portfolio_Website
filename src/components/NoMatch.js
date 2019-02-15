@@ -15,6 +15,13 @@ const NoMatch = () => (
           </Container>
           <NoMatchPart />
         </div>
+        <div style={{backgroundColor: '#222831'}}>
+          <Container value={value} fluid>
+            Page not found return
+            <Link to="/"> Home</Link>
+          </Container>
+          <NoMatchPart />
+        </div>
       </div>
     )}
   </ThemeConsumer>

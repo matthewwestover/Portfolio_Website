@@ -116,17 +116,58 @@ export const ToggleDiv = styled.div`
 `
 
 export const ToggleContainer = styled.div`
-    display: flex;
-    justify-content: ${props => props.value.darkTheme ? 'flex-end' : 'flex-start'};
-    align-items: center;
-    width: 70px;
-    height: 30px;
-    background-color: ${props => props.value.darkTheme ? '#222831' : '#fffef6'};
-    position: relative;
-    border-radius: 15px;
-    border: 2px solid #fd7014;
-    cursor: pointer;
-    padding: 5px;
-    box-shadow: inset 10px 10px 12px rgba(0, 0, 0, 0.3);
-    transition: 700ms;
+  display: flex;
+  justify-content: ${props => props.value.darkTheme ? 'flex-end' : 'flex-start'};
+  align-items: center;
+  width: 70px;
+  height: 30px;
+  background-color: ${props => props.value.darkTheme ? '#222831' : '#fffef6'};
+  position: relative;
+  border-radius: 15px;
+  border: 2px solid #fd7014;
+  cursor: pointer;
+  padding: 5px;
+  box-shadow: inset 10px 10px 12px rgba(0, 0, 0, 0.3);
+  transition: 700ms;
+`
+
+export const NavDiv = styled.div`
+  height: 75px;
+  width: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: 25;
+  margin-top: 0px;
+  transition: 700ms;
+  display: flex;
+  align-items: center;
+  padding: 0px 75px 0px 75px;
+  justify-content: space-between;
+  background-color: ${props => props.solid ? `${props.value.darkTheme ? '#222831' : '#fffef6'}` : '' }
+`
+
+export const NavLogo = styled.img`
+  height: 60px;
+  transition: 700ms;
+  cursor: pointer;
+`
+
+export const NavLinksDiv = styled.div`
+  height: 100%
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+`
+
+export const NavButton = styled.div`
+  height: 45px
+  padding-left: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  cursor: pointer;
+  color: ${props => props.solid ? `${props.value.darkTheme ? '#eeeeee' : '#0e3047'}` : `${props.value.darkTheme ? '#eeeeee' : '#0e3047'}` }
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 22px;
+  font-weight: 200;
 `
