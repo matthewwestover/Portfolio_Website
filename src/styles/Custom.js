@@ -33,7 +33,7 @@ export const HomeWrapper = styled.div`
   align-items: center;
   justify-content: center;
   height: 100%;
-  transition: 0.75s;
+  transition: 700ms;
   min-height: 100vh;
   width: 100%;
   padding: 2em;
@@ -63,7 +63,7 @@ export const Title = styled(Header)`
   text-decoration: ${props => props.underlined ? 'underline' : ''} !important;
   font-style: ${props => props.italic ? 'italic' : ''} !important;
   color: ${props => props.value.darkTheme ? '#eeeeee !important' : '#0e3047 !important'}
-  
+  transition: 700ms;
 `
 
 export const HomeLogo = styled.img`
@@ -71,6 +71,7 @@ export const HomeLogo = styled.img`
   padding-right: 10%;
   border-right: 3px solid ${props => props.value.darkTheme ? '#eeeeee !important' : '#0e3047 !important'};
   margin-right: 10%;
+  transition: 700ms;
 `
 
 export const HomePart = styled.div`
@@ -82,20 +83,50 @@ export const HomePart = styled.div`
   position: absolute;
 `
 
-export const PhantomFoot = styled.div`
-  display: block;
-  padding: 20px;
-  height: 60px;
-  width: 100%;
-`
-
 export const FooterDiv = styled.div`
   background-color: ${props => props.value.darkTheme ? '#393e46' : '#10828c'}
-  height: 60px;
+  height: 40px;
   width: 100%;
   border-top: 2px solid #fd7014;
-  padding: 20px;
   position: fixed;
   left: 0;
   bottom: 0;
+  z-index: 20;
+  transition: 700ms;
+`
+
+export const SocialDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%
+  padding-left: 2vw;
+  padding-right: 2vw;
+`
+
+export const ToggleDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 100px;
+  margin-left: auto;
+`
+
+export const ToggleContainer = styled.div`
+    display: flex;
+    justify-content: ${props => props.value.darkTheme ? 'flex-end' : 'flex-start'};
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    background-color: ${props => props.value.darkTheme ? '#222831' : '#fffef6'};
+    position: relative;
+    border-radius: 15px;
+    border: 2px solid #fd7014;
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: inset 10px 10px 12px rgba(0, 0, 0, 0.3);
+    transition: 700ms;
 `

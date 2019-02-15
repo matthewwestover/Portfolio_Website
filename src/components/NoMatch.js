@@ -3,7 +3,6 @@ import { Link, } from 'react-router-dom';
 import { Container, } from 'semantic-ui-react';
 import { ThemeConsumer } from "../providers/ThemeProvider";
 import NoMatchPart from './NoMatchPart';
-import Footer from './global/Footer';
 
 const NoMatch = () => (
   <ThemeConsumer>
@@ -16,7 +15,6 @@ const NoMatch = () => (
           </Container>
           <NoMatchPart />
         </div>
-        <Footer />
       </div>
     )}
   </ThemeConsumer>

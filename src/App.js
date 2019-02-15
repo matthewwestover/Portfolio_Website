@@ -4,6 +4,7 @@ import { Container } from 'semantic-ui-react';
 import ScrollToTop from './components/global/ScrollToTop';
 import Home from './components/Home';
 import NoMatch from './components/NoMatch';
+import Footer from './components/global/Footer';
 import './App.css';
 
 class App extends React.Component {
@@ -18,6 +19,7 @@ class App extends React.Component {
             </Switch>
           </ScrollToTop>
         </Container>
+        <Footer />
       </Fragment>
     );
   }
