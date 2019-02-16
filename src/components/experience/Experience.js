@@ -3,6 +3,8 @@ import { ThemeConsumer } from "../../providers/ThemeProvider";
 import { ContentWrapper, HeaderDiv, ContentDiv, ContentHeader, SmallLogo } from '../../styles/Custom';
 import Logo from '../../assets/ColorLogoOutline.png';
 import {Tabs, TabList, Tab, PanelList, Panel} from 'react-tabtab';
+import * as darkStyle from '../../styles/TabsDark';
+import * as lightStyle from '../../styles/TabsLight';
 
 const Experience = () => (
   <ThemeConsumer>
@@ -17,10 +19,17 @@ const Experience = () => (
           </ContentHeader>
         </HeaderDiv>
         <ContentDiv value={value}>
-        <Tabs>
+        <Tabs
+        value={value}
+        showModalButton={false}
+        customStyle={value.darkTheme ? darkStyle : lightStyle}
+        >
         <TabList>
-          <Tab>Tab1</Tab>
-          <Tab>Tab2</Tab>
+          <Tab>DevPoint Studios</Tab>
+          <Tab>MedData Inc.</Tab>
+          <Tab>Service Dimensions Group</Tab>
+          <Tab>Ross Stores</Tab>
+          <Tab>Waterford Institute</Tab>
         </TabList>
         <PanelList>
           <Panel>Content1</Panel>
