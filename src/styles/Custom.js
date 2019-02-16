@@ -1,5 +1,5 @@
 import styled, { keyframes, } from 'styled-components';
-import { Header } from 'semantic-ui-react';
+import { Header, Container } from 'semantic-ui-react';
 
 const fontSize = (size) => {
   switch(size) {
@@ -170,4 +170,52 @@ export const NavButton = styled.div`
   font-family: 'Titillium Web', sans-serif;
   font-size: 22px;
   font-weight: 200;
+`
+
+export const ContentDiv = styled(Container)`
+  color: ${props => props.value.darkTheme ? '#eeeeee !important' : '#0e3047 !important'}
+  font-family: 'Ovo', sans-serif;
+  font-size: ${props => fontSize(props.fSize)} !important;
+  text-decoration: ${props => props.underlined ? 'underline' : ''} !important;
+  font-style: ${props => props.italic ? 'italic' : ''} !important;
+  padding-bottom: 20px;
+`
+
+export const HeaderDiv = styled(Container)`
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  padding-bottom: 30px;
+`
+
+export const ContentWrapper = styled.div`
+  background-color: ${props => props.value.darkTheme ? '#222831' : '#fffef6'}
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  height: 100%;
+  transition: 700ms;
+  min-height: 100vh;
+  width: 100%;
+  padding: 100px 2em 0px 2em;
+  z-index: 1;
+`
+
+export const SmallLogo = styled.img`
+  width: 45px !important;
+  padding-right: 10px;
+  border-right: 3px solid ${props => props.value.darkTheme ? '#eeeeee !important' : '#0e3047 !important'};
+  transition: 700ms;
+`
+
+export const ContentHeader = styled(Header)`
+  font-family: 'Montserrat !important', sans-serif;
+  display: flex !important;
+  align-items: center !important;
+  font-size: ${props => fontSize(props.fSize)} !important;
+  text-decoration: ${props => props.underlined ? 'underline' : ''} !important;
+  font-style: ${props => props.italic ? 'italic' : ''} !important;
+  color: ${props => props.value.darkTheme ? '#eeeeee !important' : '#0e3047 !important'}
+  transition: 700ms;
 `
