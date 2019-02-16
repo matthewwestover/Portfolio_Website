@@ -1,9 +1,12 @@
 import React, { Fragment } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Container } from 'semantic-ui-react';
-import {isMobile} from 'react-device-detect';
+import { isMobile } from 'react-device-detect';
 import ScrollToTop from './components/global/ScrollToTop';
 import Home from './components/Home';
+import About from './components/About';
+import Portfolio from './components/portfolio/Portfolio';
+import Experience from './components/experience/Experience';
 import NoMatch from './components/NoMatch';
 import Navbar from './components/global/Navbar'
 import Footer from './components/global/Footer';
@@ -27,6 +30,9 @@ class App extends React.Component {
             <ScrollToTop>
               <Switch>
                 <Route exact path='/' component={Home} />
+                <Route exact path='/about' component={About} />
+                <Route exact path='/portfolio' component={Portfolio} />
+                <Route exact path='/experience' component={Experience} />
                 <Route component={NoMatch} />
               </Switch>
             </ScrollToTop>

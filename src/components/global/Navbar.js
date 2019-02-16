@@ -40,9 +40,6 @@ class Navbar extends React.Component {
               <Link to='/experience'>
                 <NavButton value={value} solid={this.state.solid}>Experience</NavButton>
               </Link>
-              <Link to='/contact'>
-                <NavButton value={value} >Contact</NavButton>
-              </Link>
             </NavLinksDiv>
           </NavDiv>
         )}
