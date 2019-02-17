@@ -1,5 +1,5 @@
 import styled, { keyframes, } from 'styled-components';
-import { Header, Container } from 'semantic-ui-react';
+import { Container } from 'semantic-ui-react';
 
 const fontSize = (size) => {
   switch(size) {
@@ -178,14 +178,14 @@ export const ContentDiv = styled(Container)`
   font-size: ${props => fontSize(props.fSize)} !important;
   text-decoration: ${props => props.underlined ? 'underline' : ''} !important;
   font-style: ${props => props.italic ? 'italic' : ''} !important;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
 `
 
 export const HeaderDiv = styled(Container)`
   display: flex !important;
   justify-content: flex-start !important;
   align-items: center !important;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 `
 
 export const ContentWrapper = styled.div`
@@ -218,6 +218,7 @@ export const ContentHeader = styled.p`
   color: ${props => props.value.darkTheme ? '#eeeeee !important' : '#0e3047 !important'}
   transition: 700ms;
 `
+
 export const ContentText = styled.p`
   font-family: 'Raleway', sans-serif;
   font-size: ${props => fontSize(props.fSize)} !important;
@@ -227,4 +228,5 @@ export const ContentText = styled.p`
   margin-top: -30px;
   display: flex !important;
   align-items: center !important;
+  padding-bottom: 10px;
 `

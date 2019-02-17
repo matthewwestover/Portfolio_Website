@@ -5,6 +5,11 @@ import Logo from '../../assets/ColorLogoOutline.png';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import "../../styles/Tabs.css";
 import DevPoint from './DevPoint';
+import MedData from './MedData';
+import SDG from './SDG';
+import Waterford from './Waterford';
+import UoU from './UoU';
+import Westminster from './Westminster';
 
 const Experience = () => (
   <ThemeConsumer>
@@ -23,14 +28,19 @@ const Experience = () => (
                 <Tab>DevPoint Studios</Tab>
                 <Tab>MedData Inc.</Tab>
                 <Tab>Service Dimensions Group</Tab>
-                <Tab>Ross Stores</Tab>
                 <Tab>The Waterford Institute</Tab>
               </TabList>
               <TabPanel>
                 <DevPoint />
               </TabPanel>
               <TabPanel>
-                Any content 2
+                <MedData />
+              </TabPanel>
+              <TabPanel>
+                <SDG />
+              </TabPanel>
+              <TabPanel>
+                <Waterford />
               </TabPanel>
             </Tabs>
           </ContentDiv>
@@ -47,10 +57,10 @@ const Experience = () => (
                 <Tab>Westminster College</Tab>
               </TabList>
               <TabPanel>
-                DevPoint Studios
+                <UoU />
               </TabPanel>
               <TabPanel>
-                Any content 2
+                <Westminster />
               </TabPanel>
             </Tabs>
           </ContentDiv>
