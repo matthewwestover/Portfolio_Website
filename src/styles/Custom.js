@@ -42,10 +42,10 @@ export const HomeWrapper = styled.div`
 `
 
 export const HomeWrapper2 = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-right: 9.5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 9.5%;
 `
 
 export const InfoWrapper = styled.div`
@@ -198,12 +198,18 @@ export const ContentWrapper = styled.div`
   transition: 700ms;
   min-height: 100vh;
   width: 100%;
-  padding: 100px 2em 0px 2em;
+  padding: 100px 2em 2em 2em;
   z-index: 1;
 `
 
 export const SmallLogo = styled.img`
   width: 45px !important;
+  padding-right: 10px;
+  transition: 700ms;
+`
+
+export const PortImage = styled.img`
+  width: 250px;
   padding-right: 10px;
   transition: 700ms;
 `
@@ -229,4 +235,20 @@ export const ContentText = styled.p`
   display: flex !important;
   align-items: center !important;
   padding-bottom: 10px;
+`
+
+export const DownloadButton = styled.div`
+  width: 160px;
+  height: 40px;
+  background-color: #fd7014;
+  padding-top: 2px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: auto;
+  cursor: pointer;
+  color: #eeeeee
 `
