@@ -57,13 +57,13 @@ export const InfoWrapper = styled.div`
   margin: 5px 0;
 `;
 
-export const Title = styled(Header)`
-  font-family: 'Montserrat !important', sans-serif;
+export const Title = styled.p`
   font-size: ${props => fontSize(props.fSize)} !important;
   text-decoration: ${props => props.underlined ? 'underline' : ''} !important;
   font-style: ${props => props.italic ? 'italic' : ''} !important;
   color: ${props => props.value.darkTheme ? '#eeeeee !important' : '#0e3047 !important'}
   transition: 700ms;
+  font-family: 'Raleway', sans-serif;
 `
 
 export const HomeLogo = styled.img`
@@ -174,11 +174,11 @@ export const NavButton = styled.div`
 
 export const ContentDiv = styled(Container)`
   color: ${props => props.value.darkTheme ? '#eeeeee !important' : '#0e3047 !important'}
-  font-family: 'Ovo', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: ${props => fontSize(props.fSize)} !important;
   text-decoration: ${props => props.underlined ? 'underline' : ''} !important;
   font-style: ${props => props.italic ? 'italic' : ''} !important;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
 `
 
 export const HeaderDiv = styled(Container)`
@@ -205,17 +205,26 @@ export const ContentWrapper = styled.div`
 export const SmallLogo = styled.img`
   width: 45px !important;
   padding-right: 10px;
-  border-right: 3px solid ${props => props.value.darkTheme ? '#eeeeee !important' : '#0e3047 !important'};
   transition: 700ms;
 `
 
-export const ContentHeader = styled(Header)`
-  font-family: 'Montserrat !important', sans-serif;
-  display: flex !important;
-  align-items: center !important;
+export const ContentHeader = styled.p`
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  align-items: flex-start;
   font-size: ${props => fontSize(props.fSize)} !important;
   text-decoration: ${props => props.underlined ? 'underline' : ''} !important;
   font-style: ${props => props.italic ? 'italic' : ''} !important;
   color: ${props => props.value.darkTheme ? '#eeeeee !important' : '#0e3047 !important'}
   transition: 700ms;
+`
+export const ContentText = styled.p`
+  font-family: 'Raleway', sans-serif;
+  font-size: ${props => fontSize(props.fSize)} !important;
+  text-decoration: ${props => props.underlined ? 'underline' : ''} !important;
+  font-style: ${props => props.italic ? 'italic' : ''} !important;
+  color: ${props => props.value.darkTheme ? '#eeeeee !important' : '#0e3047 !important'}
+  margin-top: -30px;
+  display: flex !important;
+  align-items: center !important;
 `

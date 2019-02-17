@@ -8,10 +8,9 @@ const Portfolio = () => (
     {value => (
       <ContentWrapper value={value}>
         <HeaderDiv>
-          <ContentHeader value={value} fSize='big'><SmallLogo src={Logo} value={value} />About Me</ContentHeader>
+          <ContentHeader value={value} fSize='big'><SmallLogo src={Logo} value={value} />Portfolio</ContentHeader>
         </HeaderDiv>
-        <ContentDiv value={value}>About Page</ContentDiv>
-        <ContentDiv value={value}>About Page</ContentDiv>
+        <ContentDiv value={value}>Portfolio things here</ContentDiv>
       </ContentWrapper>
     )}
   </ThemeConsumer>
