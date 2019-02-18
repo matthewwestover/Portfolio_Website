@@ -80,3 +80,67 @@ export const HomePart = styled.div`
   z-index: -1;
   position: absolute;
 `
+
+export const NavDiv = styled.div`
+  height: 50px;
+  width: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: 25;
+  margin-top: 0px;
+  transition: 700ms;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+  justify-content: space-between;
+`
+
+export const NavLogo = styled.img`
+  height: 44px;
+  transition: 700ms;
+  cursor: pointer;
+`
+
+export const NavButton = styled.div`
+  height: 44px
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  color: ${props => props.solid ? `${props.value.darkTheme ? '#eeeeee' : '#0e3047'}` : `${props.value.darkTheme ? '#eeeeee' : '#0e3047'}` }
+  font-family: 'Titillium Web', sans-serif;
+`
+
+export const MenuButton = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  color: ${props => props.solid ? `${props.value.darkTheme ? '#eeeeee' : '#0e3047'}` : `${props.value.darkTheme ? '#eeeeee' : '#0e3047'}` }
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 40px;
+  height: 75px;
+`
+
+export const MenuDiv = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color:  ${props => props.value.darkTheme ? '#222831' : '#fffef6'}; 
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 20;
+  transition: 700ms;
+  animation: ${fadeIn} .5s linear;
+`
+
+export const MenuButtonDiv = styled.div`
+  width: 100%;
+  z-index: 25;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0px 10px 0px 10px;
+  margin-top: 100px;
+  justify-content: space-between;
+`

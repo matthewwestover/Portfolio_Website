@@ -11,6 +11,7 @@ import NoMatch from './components/NoMatch';
 import Navbar from './components/global/Navbar'
 import Footer from './components/global/Footer';
 import MobileHome from './mobile/MobileHome';
+import MobileNavBar from './mobile/global/mNavbar';
 import './App.css';
 
 class App extends React.Component {
@@ -19,7 +20,14 @@ class App extends React.Component {
     if (isMobile) {
       return(
         <Fragment>
-          <Route exact path='/' component={MobileHome} />
+          <MobileNavBar />
+          <div>
+            <ScrollToTop>
+              <Switch>
+                <Route exact path='/' component={MobileHome} />
+              </Switch>
+            </ScrollToTop>
+          </div>
         </Fragment>
       )
     } else {

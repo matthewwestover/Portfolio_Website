@@ -27,7 +27,7 @@ const About = () => (
         </ContentDiv>
         <ContentDiv value={value}>
           <ContentText value={value}>
-            Hi, my name is Matt Westover, and I'm a full-stack developer from South Jordan, Utah. I am a graduate from the University of Utah / DevPoint Labs Professional Education Course - Full Stack Web Development in Salt Lake City, UT. I also have a Bachelor's of Science in Psychology from Westminster College also located in Salt Lake City, UT. 
+            Hi, my name is Matt Westover, and I'm a Full-Stack Developer from South Jordan, Utah. I am a graduate from the University of Utah / DevPoint Labs Professional Education Course - Full Stack Web Development in Salt Lake City, UT. I also have a Bachelor's of Science in Psychology from Westminster College also located in Salt Lake City, UT. 
           </ContentText>
           <br />
           <ContentText value={value}>

@@ -6,13 +6,13 @@ const Westminster = () => (
   <ThemeConsumer>
     {value => (
       <ContentDiv value={value}>
-        <ContentHeader value={value} fSize='large' style={{fontWeight: 'bold'}}>The University of Utah</ContentHeader>
-        <ContentText value={value} style={{fontWeight: 'bold'}}>Full Time Web Development Certification, Professional Education, Dev Point Labs</ContentText>
-        <ContentText value={value} fSize='small'>Salt Lake City, UT (Nov 2018 - Feb 2019)</ContentText>
+        <ContentHeader value={value} fSize='large' style={{fontWeight: 'bold'}}>Westminster College</ContentHeader>
+        <ContentText value={value} style={{fontWeight: 'bold'}}>Bachelor's of Science - Psychology</ContentText>
+        <ContentText value={value} fSize='small'>Salt Lake City, UT (Sept 2008 - June 2012)</ContentText>
         <ContentText value={value} fSize='small'>
           <ul>
-            <li>Attended University of Utah certified software engineering bootcamp</li>
-            <li>Three month accelerated full-stack coding program</li>
+            <li>Private Liberal Arts College located in Salt Lake City, UT</li>
+            <li>Completed Psychology Major with Biology background work</li>
           </ul>
         </ContentText>
       </ContentDiv>
