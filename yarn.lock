@@ -8044,6 +8044,11 @@ react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.1.tgz#a80141e246eb894824fb4f2901c0c50ef31d4cdb"
   integrity sha512-ioMCzVDWvCvKD8eeT+iukyWrBGrA3DiFYkXfBsVYIRdaREZuBjENG+KjrikavCLasozqRWTwFUagU/O4vPpRMA==
 
+react-modal-image@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/react-modal-image/-/react-modal-image-2.3.2.tgz#8ec3a935bc407799d4c187c477d810d4b625e8c0"
+  integrity sha512-+jzWCCovhAl9CPSJJlZuI0r0LI2qRZ0Gh9XGA7QeBHnILoHFdvk/qOy9UUoaVKbp5rjJGOW2kr7aUB3Qkcnb1g==
+
 react-particles-js@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/react-particles-js/-/react-particles-js-2.4.2.tgz#34a4d1ea15eaebcbb068f7b6a7c43b18792fcf65"

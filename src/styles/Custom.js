@@ -11,6 +11,8 @@ const fontSize = (size) => {
       return '30px';
     case 'small':
       return '15px';
+    case 'tiny':
+      return '10px';
     default:
       return '20px';
   }
@@ -287,6 +289,59 @@ export const RatingWrapper = styled.div`
   margin: 0px 2px 0px 2px;
 `
 export const ScoreDiv = styled.div`
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+`
+
+export const ProjectTech = styled.ul`
+  list-style: none;
+  margin-top: -20px;
+  margin-left: -20px;
+`
+
+export const Tech = styled.li`
+  display: inline-block;
+  padding: 4px 8px;
+  border: 1px solid #fd7014;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 15px
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  color: #eeeeee;
+  background-color: ${props => props.value.darkTheme ? '#393e46' : "#0e3047" };
+  &:first-child {
+    margin-left: 0;
+  }
+  `
+  export const SourceButton = styled.li`
+  display: inline-block;
+  background-color: #fd7014;
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: 1px solid ${props => props.value.darkTheme ? '#eeeeee' : "#0e3047" };
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  margin: 5px;
+  cursor: pointer;
+  color: #eeeeee
+`
+  export const DemoButton = styled.li`
+  display: inline-block;
+  background-color: #85A720;
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: 1px solid ${props => props.value.darkTheme ? '#eeeeee' : "#0e3047" };
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  margin: 5px;
+  cursor: pointer;
+  color: #eeeeee
+`
+
+export const PortfolioImages = styled.div`
+  display: flex;
+  justify-content: space-around;
 `
