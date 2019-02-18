@@ -208,3 +208,86 @@ export const Rating = styled.div`
     justify-content: space-between;
     color: ${props => props.value.darkTheme ? '#eeeeee' : '#0e3047'};
 `
+
+export const ContentWrapper = styled.div`
+  background-color: ${props => props.value.darkTheme ? '#222831' : '#fffef6'}
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  height: 100%;
+  transition: 700ms;
+  min-height: 100vh;
+  width: 100%;
+  padding: 75px 2em 4em 2em;
+  z-index: 1;
+`
+
+export const HeaderDiv = styled(Container)`
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  padding-bottom: 10px;
+`
+
+export const ContentHeader = styled.p`
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  align-items: flex-start;
+  font-size: ${props => fontSize(props.fSize)} !important;
+  text-decoration: ${props => props.underlined ? 'underline' : ''} !important;
+  font-style: ${props => props.italic ? 'italic' : ''} !important;
+  color: ${props => props.value.darkTheme ? '#eeeeee !important' : '#0e3047 !important'}
+  transition: 700ms;
+`
+
+export const SmallLogo = styled.img`
+  width: 30px !important;
+  padding-right: 10px;
+  transition: 700ms;
+`
+export const ContentText = styled.p`
+  font-family: 'Raleway', sans-serif;
+  font-size: ${props => fontSize(props.fSize)} !important;
+  text-decoration: ${props => props.underlined ? 'underline' : ''} !important;
+  font-style: ${props => props.italic ? 'italic' : ''} !important;
+  color: ${props => props.value.darkTheme ? '#eeeeee !important' : '#0e3047 !important'}
+  margin-top: -30px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center;
+  padding-bottom: 10px;
+`
+
+export const ContentDiv = styled(Container)`
+  color: ${props => props.value.darkTheme ? '#eeeeee !important' : '#0e3047 !important'}
+  font-family: 'Raleway', sans-serif;
+  font-size: ${props => fontSize(props.fSize)} !important;
+  text-decoration: ${props => props.underlined ? 'underline' : ''} !important;
+  font-style: ${props => props.italic ? 'italic' : ''} !important;
+  padding-bottom: 10px;
+`
+
+export const PortImage = styled.img`
+  width: 250px;
+  padding-right: 10px;
+  transition: 700ms;
+  padding-bottom: 10px;
+`
+
+export const DownloadButton = styled.div`
+  width: 160px;
+  height: 40px;
+  background-color: #fd7014;
+  padding-top: 2px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #eeeeee
+  margin-top: 10px;
+`
