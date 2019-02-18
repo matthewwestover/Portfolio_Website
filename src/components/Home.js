@@ -15,7 +15,7 @@ const Home = () => (
             <Title value={value} fSize='huge' style={{fontWeight: 'bold'}}>Westover</Title>
           </InfoWrapper>
         </HomeWrapper2>
-        <Title value={value} fsize='large' style={{paddingRight: '100px', paddingTop: '10px',}}> Software Engineer - Salt Lake City, Utah</Title>
+        <Title value={value} fsize='large' style={{paddingRight: '100px', paddingTop: '10px',}}>Software Engineer - Salt Lake City, Utah</Title>
         <HomeParticles />
       </HomeWrapper>
     )}
