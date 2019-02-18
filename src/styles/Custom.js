@@ -280,7 +280,7 @@ export const RatingWrapper = styled.div`
   z-index: 1;
   `
   
-  export const Score = styled.div`
+export const Score = styled.div`
   background-color: ${props => props.filled ? '#fd7014' : '#393e46'}
   border: 1px solid ${props => props.value.darkTheme ? '#eeeeee' : '#0e3047'};
   height: 20px;

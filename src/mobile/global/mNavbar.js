@@ -22,7 +22,7 @@ class MobileNavbar extends React.Component {
             <NavLogo src={Logo} onClick={() => this.setState({ open: false})} />
           </Link>
           <NavButton value={value}>
-            <FontAwesomeIcon icon={faBars} size='2x' color="#eeeeee" onClick={() => this.menuOpen()} /><br />
+            <FontAwesomeIcon value={value} icon={faBars} size='2x' color={`${props => props.value.darkTheme ? '#eeeeee' : '#0e3047'}`} onClick={() => this.menuOpen()} /><br />
           </NavButton>
         </NavDiv>
       )}
@@ -40,7 +40,7 @@ class MobileNavbar extends React.Component {
                 <NavLogo src={Logo} onClick={() => this.menuOpen()}/>
               </Link>
               <NavButton value={value}>
-                <FontAwesomeIcon icon={faTimes} size='2x' color="#eeeeee" onClick={() => this.menuOpen()} /><br />
+                <FontAwesomeIcon value={value} icon={faTimes} size='2x' color={`${props => props.value.darkTheme ? '#eeeeee' : '#0e3047'}`} onClick={() => this.menuOpen()} /><br />
               </NavButton>
             </NavDiv>
             <MenuButtonDiv>

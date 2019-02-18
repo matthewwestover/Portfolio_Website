@@ -144,3 +144,67 @@ export const MenuButtonDiv = styled.div`
   margin-top: 100px;
   justify-content: space-between;
 `
+
+export const FooterDiv = styled.div`
+  background-color: ${props => props.value.darkTheme ? '#393e46' : '#10828c'}
+  height: 40px;
+  width: 100%;
+  border-top: 2px solid #fd7014;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 20;
+  transition: 700ms;
+`
+
+export const SocialDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%
+  padding-left: 2vw;
+  padding-right: 2vw;
+`
+
+export const ToggleDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 100px;
+  margin-left: auto;
+`
+
+export const RatingWrapper = styled.div`
+  background-color: ${props => props.value.darkTheme ? '#222831' : '#fffef6'}
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+  `
+
+  export const ScoreDiv = styled.div`
+  display: flex;
+  align-items: center;
+`
+
+export const Score = styled.div`
+  background-color: ${props => props.filled ? '#fd7014' : '#393e46'}
+  border: 1px solid ${props => props.value.darkTheme ? '#eeeeee' : '#0e3047'};
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  margin: 0px 2px 0px 2px;
+`
+export const Rating = styled.div`
+    width: 95%;
+    display: flex;
+    align-items: space-around;
+    justify-content: space-between;
+    color: ${props => props.value.darkTheme ? '#eeeeee' : '#0e3047'};
+`
