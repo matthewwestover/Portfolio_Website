@@ -4,7 +4,7 @@ import { ContentWrapper, HeaderDiv, ContentDiv, ContentText, ContentHeader, Smal
 import Logo from '../assets/ColorLogoOutline.png';
 import Portrait from '../assets/crop.png';
 import Resume from '../assets/MattWestoverResume.pdf';
-import {Button} from 'semantic-ui-react'
+import Ratings from './Ratings';
 
 const About = () => (
   <ThemeConsumer>
@@ -45,10 +45,16 @@ const About = () => (
               <li>Redux</li>
               <li>PostgreSQL</li>
               <li>HTML/CSS</li>
+              <li>AGILE/Scrum</li>
+              <li>GitHub</li>
             </ul>
           </ContentText>
           <ContentText value={value}>
             In my spare time I read a lot of fantasy novels, enjoy Netflix and Movies, and play video games. I also am a hobbyist photographer, focused mainly on landscapes. I'm also a massive Star Wars nerd. 
+          </ContentText>
+          <br />
+          <ContentText value={value}>
+            <Ratings />
           </ContentText>
         </ContentDiv>
       </ContentWrapper>

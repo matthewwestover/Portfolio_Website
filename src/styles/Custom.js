@@ -198,7 +198,7 @@ export const ContentWrapper = styled.div`
   transition: 700ms;
   min-height: 100vh;
   width: 100%;
-  padding: 100px 2em 2em 2em;
+  padding: 100px 2em 4em 2em;
   z-index: 1;
 `
 
@@ -251,4 +251,42 @@ export const DownloadButton = styled.div`
   margin-left: auto;
   cursor: pointer;
   color: #eeeeee
+`
+
+export const RatingDiv = styled.div`
+  width: 100%
+  display: flex;
+  justify-content: space-around;
+`
+
+export const Rating = styled.div`
+    width: 50%;
+    display: flex;
+    align-items: space-around;
+    justify-content: space-between;
+    padding-right: 20px;
+`
+
+export const RatingWrapper = styled.div`
+  background-color: ${props => props.value.darkTheme ? '#222831' : '#fffef6'}
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  transition: 700ms;
+  width: 100%;
+  z-index: 1;
+  `
+  
+  export const Score = styled.div`
+  background-color: ${props => props.filled ? '#fd7014' : '#393e46'}
+  border: 1px solid ${props => props.value.darkTheme ? '#eeeeee' : '#0e3047'};
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  margin: 0px 2px 0px 2px;
+`
+export const ScoreDiv = styled.div`
+    display: flex;
+    align-items: center;
 `
