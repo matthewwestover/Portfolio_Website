@@ -300,7 +300,6 @@ export const ProjectTech = styled.ul`
 export const Tech = styled.li`
   display: inline-block;
   padding: 4px 8px;
-  border: 1px solid #fd7014;
   border-radius: 5px;
   margin: 5px;
   font-size: 15px

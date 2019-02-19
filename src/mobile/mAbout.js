@@ -35,6 +35,10 @@ const mAbout = () => (
           </ContentText>
           <br />
           <ContentText value={value}>
+            In my spare time I read a lot of fantasy novels, enjoy Netflix and Movies, and play video games. I also am a hobbyist photographer, focused mainly on landscapes. I'm also a massive Star Wars nerd. 
+          </ContentText>
+          <br />
+          <ContentText value={value}>
             I currently have training on the following:
           </ContentText>
           <ContentText value={value} style={{marginLeft: '-75px'}}>
@@ -48,9 +52,6 @@ const mAbout = () => (
               <li>AGILE/Scrum</li>
               <li>GitHub</li>
             </ul>
-          </ContentText>
-          <ContentText value={value}>
-            In my spare time I read a lot of fantasy novels, enjoy Netflix and Movies, and play video games. I also am a hobbyist photographer, focused mainly on landscapes. I'm also a massive Star Wars nerd. 
           </ContentText>
           <br />
           <ContentText value={value}>
