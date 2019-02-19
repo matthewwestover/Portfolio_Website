@@ -344,4 +344,5 @@ export const Tech = styled.li`
 export const PortfolioImages = styled.div`
   display: flex;
   justify-content: space-around;
+  height: 200px;
 `

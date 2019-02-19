@@ -338,5 +338,8 @@ export const Tech = styled.li`
 
 export const PortfolioImages = styled.div`
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%
 `
