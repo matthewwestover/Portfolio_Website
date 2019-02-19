@@ -15,6 +15,7 @@ import MobileNavBar from './mobile/global/mNavbar';
 import MobileFooter from './mobile/global/mFooter';
 import MobileAbout from './mobile/mAbout';
 import MobilePortfolio from './mobile/portfolio/mPortfolio';
+import MobileExperience from './mobile/experience/mExperience';
 import './App.css';
 
 class App extends React.Component {
@@ -30,6 +31,7 @@ class App extends React.Component {
                 <Route exact path='/' component={MobileHome} />
                 <Route exact path='/about' component={MobileAbout} />
                 <Route exact path='/portfolio' component={MobilePortfolio} />
+                <Route exact path='/experience' component={MobileExperience} />
               </Switch>
             </ScrollToTop>
             <MobileFooter />
