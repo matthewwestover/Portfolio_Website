@@ -37,7 +37,7 @@ const mAbout = () => (
           <ContentText value={value}>
             I currently have training on the following:
           </ContentText>
-          <ContentText value={value}>
+          <ContentText value={value} style={{marginLeft: '-75px'}}>
             <ul>
               <li>Ruby on Rails</li>
               <li>Javascript</li>

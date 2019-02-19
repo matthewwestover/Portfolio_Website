@@ -47,7 +47,7 @@ class MobileNavbar extends React.Component {
               <Link to='/about'>
                 <MenuButton value={value} onClick={() => this.menuOpen()}>About</MenuButton>
               </Link>
-              <Link to='/portfolio>'>
+              <Link to='/portfolio'>
                 <MenuButton value={value} onClick={() => this.menuOpen()}>Portfolio</MenuButton>
               </Link>
               <Link to='/experience'>

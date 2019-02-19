@@ -1,11 +1,11 @@
 import React from 'react';
-import { ThemeConsumer } from "../../providers/ThemeProvider";
-import { ContentWrapper, HeaderDiv, ContentHeader, SmallLogo } from '../../styles/Custom';
+import { ThemeConsumer } from '../../providers/ThemeProvider';
+import { ContentWrapper, HeaderDiv, ContentHeader, SmallLogo } from '../../styles/Mobile';
 import Logo from '../../assets/ColorLogoOutline.png';
+import MWPhoto from './mMWPhoto';
 import TableApp from './TableApp';
-import MWPhoto from './MWPhotography';
 
-const Portfolio = () => (
+const mPortfolio = () => (
   <ThemeConsumer>
     {value => (
       <ContentWrapper value={value}>
@@ -19,4 +19,4 @@ const Portfolio = () => (
   </ThemeConsumer>
 )
 
-export default Portfolio;
+export default mPortfolio;
