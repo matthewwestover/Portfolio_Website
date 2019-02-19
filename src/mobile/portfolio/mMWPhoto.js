@@ -2,12 +2,6 @@ import React from 'react';
 import { ThemeConsumer } from '../../providers/ThemeProvider';
 import { Image, Modal } from 'semantic-ui-react';
 import { ContentDiv, ContentHeader, ContentText, ProjectTech, Tech, PortfolioImages, DownloadButton, DemoButton, SourceButton } from '../../styles/Mobile';
-import MainSmall from '../../assets/tableappmainsmall.png';
-import MainBig from '../../assets/tableappmain.png';
-import EventSmall from '../../assets/eventmainsmall.png';
-import EventBig from '../../assets/eventmain.png';
-import CalSmall from '../../assets/Calendarsmall.png';
-import CalBig from '../../assets/Calendar.png';
 
 class TableApp extends React.Component {
   state = { image1: false, image2: false, image3: false }
