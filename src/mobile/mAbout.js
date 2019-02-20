@@ -31,7 +31,7 @@ const mAbout = () => (
           </ContentText>
           <br />
           <ContentText value={value}>
-            I spent several years working in the medical billing industry both as an appeals specialist and a team supervisor. Prior to that I spend multiple summers working as an intern with the Waterford Institute creating artwork for educational software. 
+            I spent several years working in the medical billing industry both as an appeals specialist and a team supervisor. Prior to that I spent multiple summers working as an intern with the Waterford Institute creating artwork for educational software. 
           </ContentText>
           <br />
           <ContentText value={value}>
