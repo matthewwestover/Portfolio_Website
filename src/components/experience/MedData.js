@@ -18,7 +18,7 @@ const MedData = () => (
           </ul>
         </ContentText>
         <ContentText value={value} style={{fontWeight: 'bold'}}>Worker's Compensation Specialist</ContentText>
-        <ContentText value={value} fSize='small'>Draper, UT (Aug 2017 - Nov 2018)</ContentText>
+        <ContentText value={value} fSize='small'>Draper, UT (Aug 2015 - Nov 2017)</ContentText>
         <ContentText value={value} fSize='small'>
           <ul>
             <li>Investigate, Gather Insurance Info, Bill, and Appeal Worker's Compensation Claims</li>
