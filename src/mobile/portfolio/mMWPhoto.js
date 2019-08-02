@@ -26,7 +26,7 @@ class TableApp extends React.Component {
       <ThemeConsumer>
         {value => (
           <ContentDiv value={value}>
-            <ContentHeader value={value} fSize='large' style={{fontWeight: 'bold'}} underlined>Ticketing and Table Reservation App</ContentHeader>
+            <ContentHeader value={value} fSize='large' style={{fontWeight: 'bold'}} underlined>Matt Westover Photography</ContentHeader>
             <ContentText value={value}>Site currently in development</ContentText>
             {/* <ProjectTech>
               <a

@@ -6,8 +6,8 @@ const UoU = () => (
   <ThemeConsumer>
     {value => (
       <ContentDiv value={value}>
-        <ContentHeader value={value} fSize='large' style={{fontWeight: 'bold'}}>The University of Utah</ContentHeader>
-        <ContentText value={value} style={{fontWeight: 'bold'}}>Full Time Web Development Certification, Professional Education, Dev Point Labs</ContentText>
+        <ContentHeader value={value} fSize='large' style={{fontWeight: 'bold'}}>DevPoint Labs</ContentHeader>
+        <ContentText value={value} style={{fontWeight: 'bold'}}>Full Time Web Development Certification, Professional Education, University of Utah</ContentText>
         <ContentText value={value} fSize='small'>Salt Lake City, UT (Nov 2018 - Feb 2019)</ContentText>
         <ContentText value={value} fSize='small'>
           <ul>
