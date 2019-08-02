@@ -53,7 +53,7 @@ const Experience = () => (
           <ContentDiv value={value}>
             <Tabs>
               <TabList>
-                <Tab>The University of Utah</Tab>
+                <Tab>DevPoint Studios</Tab>
                 <Tab>Westminster College</Tab>
               </TabList>
               <TabPanel>
